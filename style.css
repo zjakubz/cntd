@@ -9,7 +9,7 @@
 .background-container {
   background-color: rgb(231, 231, 231);
   border-radius: 2rem;
-  margin: 15rem;
+  margin: 15%;
   transition: 0.5s ease;
 }
 .background-container:hover{
@@ -107,13 +107,19 @@ a:hover {
 
 /* main end */
 
-/* zeny pozor */
+/* content */
 
+ 
 .zeny-pozor, .daddy-bohati, .daddy-lasce, .pro-chlapy {
   color: black;
   margin-top: 8rem;
   font-size: 2.5rem;
-  padding: 2rem 15rem 0rem 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+  text-align: center;      
+  height: 80vh;           
 }
 
 .zeny-pozor h1, .daddy-bohati h1, .daddy-lasce h1, .pro-chlapy h1 {
@@ -128,23 +134,23 @@ a:hover {
 }
 
 .zeny-pozor video, .daddy-bohati video, .daddy-lasce video, .pro-chlapy video {
-  width: 50rem;
+  width: 40rem;
   border-radius: 2rem;
-  margin: 0 auto;
-  display: block;
+  margin: 0;    
 }
 
 .btn-container, .btn-container2, .btn-container3, .btn-container4 {
   display: flex;
-  justify-content: center; 
-  align-items: center;
+  justify-content: center;   
+  align-items: center;      
+  margin-top: 2rem;         
 }
 
 .zeny-pozor button, .daddy-bohati button, .daddy-lasce button, .pro-chlapy button {
   background-color: black;
   color: white;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.021);
-  margin: 3rem;
+  margin: 1rem;            
   font-weight: 700;
   padding: 0.6rem 5.6rem;
   border-radius: 0.7rem;
@@ -172,11 +178,10 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Start with transparent background */
+  background-color: rgba(0, 0, 0, 0);  
   z-index: -1;
   transition: background-color 0.3s ease;
 }
-
 
 /* footer */
 .footer {

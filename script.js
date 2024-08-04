@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buttons.forEach(button => {
         button.addEventListener('mouseover', () => {
-            pageBackground.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Dark background on hover
+            pageBackground.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';  
         });
 
         button.addEventListener('mouseout', () => {
-            pageBackground.style.backgroundColor = 'rgba(0, 0, 0, 0)'; // Transparent background when not hovering
+            pageBackground.style.backgroundColor = 'rgba(0, 0, 0, 0)';  
         });
     });
 });
