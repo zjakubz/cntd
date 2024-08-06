@@ -9,6 +9,7 @@
 .background-container {
   background-color: rgb(231, 231, 231);
   border-radius: 2rem;
+  padding: 1rem;
   margin: 15%;
   transition: 0.5s ease;
 }
@@ -19,7 +20,9 @@
   background-color: white;
   color: black;
 }
-
+.body-color {
+  transition: background-color 0.4s ease-in-out; 
+}
 body {
   font-family: "Poppins", sans-serif;
   height: 200vh;
@@ -47,21 +50,29 @@ nav {
   list-style: none;
   font-size: 1rem;
 }
-
+.nav-bar{
+  display: none;
+}
+.container{
+  display: none;
+}
+.menu-links{
+  display: none;
+}
 /* NAVBAR */
 
-a {
+.nav-links a {
   text-decoration: none;
   color: black;
   transition: 200ms ease-in;
   margin: 0 1rem ;
 }
 
-a:hover {
-  color: black;
+.nav-links a:hover {
+  color: white;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: black;
+  text-decoration-color: white;
   font-size: 1.15rem;
   letter-spacing: 0.2rem;
   font-weight: 600;

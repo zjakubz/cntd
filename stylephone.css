@@ -1,0 +1,271 @@
+
+@media (max-width: 600px) {
+    body {
+      font-size: 0.9rem;
+    }
+
+    .background-container {
+        background-color: rgb(231, 231, 231);
+        border-radius: 3rem;
+        margin: 5%;
+        transition: 0.5s ease;
+      }
+      .background-container:hover{
+        transform: 0;
+        font-size: 0;
+        box-shadow: 0;
+        background-color: 0;
+        color: 0;
+      }
+    /*nav-links*/
+
+    nav {
+        display: none;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      /* NAVBAR */
+      
+      .nav-links a {
+        display: none;
+      }
+      
+      .nav-links a:hover {
+        display: none;
+      }
+      
+      .logo {
+        display: none;
+      }
+      /*hamburger start*/
+
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Jura:wght@400;500;600&family=Raleway&display=swap');
+
+
+
+.container {
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+}
+
+.brand {
+    font-size: 1.5rem;
+    color: #0e2431;
+    font-weight: 600;
+    margin-left: 20px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+.navbar .menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 120px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(150%);
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.navbar .menu-items li {
+    font-size: 1.5rem;
+    list-style: none;
+    color: #0e2431;
+    font-weight: 500;
+}
+.menu-items li a{
+    color: black;
+    text-decoration: none;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked ~ .menu-items {
+    transform: translateX(0);
+}
+
+/* Hamburger */
+.hamburger {
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+.hamburger .line-top {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger .line-middle {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger .line-bottom {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.checkbox:checked ~ .hamburger .line-top {
+    transform: rotate(45deg);
+}
+
+.checkbox:checked ~ .hamburger .line-middle {
+    transform: scaleY(0);
+}
+
+.checkbox:checked ~ .hamburger .line-bottom {
+    transform: rotate(-45deg);
+}
+
+
+    /*nav links end*/
+  
+    .main-text {
+      font-size: 2rem;
+      padding: 4rem 2rem 0 2rem;
+    }
+  
+    .side-text {
+      padding: 0.5rem;
+      padding: 3rem 2rem 0 2rem;
+      font-size: 0.7rem;
+    }
+  
+    .side-text h3 {
+      font-size: 1.2rem;
+    }
+  
+    .side-text h4 {
+      font-size: 0.8rem;
+    }
+  
+    .side-text h5 {
+      font-size: 0.7rem;
+    }
+  
+    
+  
+    .zeny-pozor, .daddy-bohati, .daddy-lasce, .pro-chlapy {
+      font-size: 1.5rem;
+      padding: 1rem;
+    }
+  
+    .zeny-pozor h1, .daddy-bohati h1, .daddy-lasce h1, .pro-chlapy h1 {
+      font-size: 1.8rem;
+    }
+  
+    .zeny-pozor h6, .daddy-bohati h6, .daddy-lasce h6, .pro-chlapy h6 {
+      font-size: 0.8rem;
+    }
+  
+    .zeny-pozor video, .daddy-bohati video, .daddy-lasce video, .pro-chlapy video {
+      width: 90%;
+      margin: 0rem 0;
+    }
+  
+    .btn-container, .btn-container2, .btn-container3, .btn-container4 {
+      margin-top: 1rem;
+    }
+  
+    .zeny-pozor button, .daddy-bohati button, .daddy-lasce button, .pro-chlapy button {
+      padding: 0.4rem 2.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Tablet view (601px to 900px) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    body {
+      font-size: 1rem;
+    }
+  
+    .main-text {
+      font-size: 3rem;
+      padding: 3rem;
+    }
+  
+    .side-text {
+      padding: 2rem;
+      font-size: 0.8rem;
+    }
+  
+    .side-text h3 {
+      font-size: 1.5rem;
+    }
+  
+    .side-text h4 {
+      font-size: 0.85rem;
+    }
+  
+    .side-text h5 {
+      font-size: 0.75rem;
+    }
+  
+    .background-container {
+      margin: 5%;
+      padding: 1.5rem;
+    }
+  
+    .zeny-pozor, .daddy-bohati, .daddy-lasce, .pro-chlapy {
+      font-size: 2rem;
+      padding: 1.5rem;
+    }
+  
+    .zeny-pozor h1, .daddy-bohati h1, .daddy-lasce h1, .pro-chlapy h1 {
+      font-size: 2.5rem;
+    }
+  
+    .zeny-pozor h6, .daddy-bohati h6, .daddy-lasce h6, .pro-chlapy h6 {
+      font-size: 0.9rem;
+    }
+  
+    .zeny-pozor video, .daddy-bohati video, .daddy-lasce video, .pro-chlapy video {
+      width: 80%;
+      margin: 1.5rem 0;
+    }
+  
+    .btn-container, .btn-container2, .btn-container3, .btn-container4 {
+      margin-top: 1.5rem;
+    }
+  
+    .zeny-pozor button, .daddy-bohati button, .daddy-lasce button, .pro-chlapy button {
+      padding: 0.5rem 3.5rem;
+      font-size: 1rem;
+    }
+  }
